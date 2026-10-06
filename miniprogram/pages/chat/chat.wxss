@@ -1,0 +1,8 @@
+.container{height:100vh;display:flex;flex-direction:column;background:#f6f7f4}
+.msgs{flex:1;padding:20rpx}
+.msg{max-width:78%;margin:12rpx 0;padding:18rpx 22rpx;border-radius:16rpx;font-size:30rpx;line-height:1.6;white-space:pre-wrap}
+.msg.user{margin-left:auto;background:#4a7c59;color:#fff}
+.msg.assistant{margin-right:auto;background:#fff;color:#222;box-shadow:0 2rpx 8rpx rgba(0,0,0,.06)}
+.inputbar{display:flex;padding:16rpx;background:#fff;border-top:1rpx solid #e5e5e5}
+.input{flex:1;background:#f0f1ec;border-radius:40rpx;padding:14rpx 24rpx;font-size:30rpx}
+.btn{margin-left:16rpx;background:#4a7c59;color:#fff;border-radius:40rpx;font-size:30rpx}

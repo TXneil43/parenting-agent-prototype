@@ -1,0 +1,12 @@
+<view class="container">
+  <scroll-view class="msgs" scroll-y scroll-top="{{scrollTop}}">
+    <view wx:for="{{messages}}" wx:key="index" class="msg {{item.role}}">
+      <text>{{item.text}}</text>
+    </view>
+    <view wx:if="{{loading}}" class="msg assistant"><text>小芽参谋正在思考…</text></view>
+  </scroll-view>
+  <view class="inputbar">
+    <input class="input" value="{{input}}" bindinput="onInput" placeholder="描述你的困扰，比如：8个月宝宝夜醒频繁" confirm-type="send" bindconfirm="sendMsg" />
+    <button class="btn" bindtap="sendMsg">发送</button>
+  </view>
+</view>
